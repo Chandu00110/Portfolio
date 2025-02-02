@@ -239,38 +239,43 @@
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fas fa-paper-plane"></i>chandhupepakayala@gmail.com</p>
-            <p><i class="fas fa-phone-square-alt"></i>+91 9381109642</p>
+            <p>
+            <a href="mailto:chandhupepakayala@gmail.com"><i class="fas fa-envelope"></i>chandhupepakayala@gmail.com</a>
+            </p>
+            <p><a href="tel:+919381109642"><i class="fas fa-phone-square-alt"></i>+91 9381109642</a></p>
             <div class="social-icons">
-              <a href=""><i class="fab fa-facebook"></i></a>
-              <a href=""><i class="fab fa-twitter-square"></i></a>
-              <a href=""><i class="fab fa-instagram"></i></a>
-              <a href=""><i class="fab fa-linkedin"></i></a>
+              <!-- <a href=""><i class="fab fa-facebook"></i></a> -->
+              <a href="www.linkedin.com/in/chandra-shekhar-pepakayala" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/Chandu00110" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/_.chandu.00__?igsh=MWZuYzd0YTljb3h5Yw==" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://x.com/5b0Chandu" target="_blank"><img src="Images/X_logo.jpg" alt="X Logo" width="30" height="35" style="margin-bottom: -7px;"></a>
             </div>
-            <a
-              href="Images/CHANDRA SHEKHAR PEPAKAYALA.pdf"
-              download
-              class="btn btn2"
-              >Download Resume</a
-            >
+            <!-- for downlading
+            <a href="Images/CHANDRA SHEKHAR PEPAKAYALA.pdf" target="_blank" download class="btn btn2" >Download Resume</a>
+             -->
+             <a href="Images/CHANDRA SHEKHAR PEPAKAYALA.pdf" target="_blank" class="btn btn2">Open Resume </a>
+            
           </div>
           <div class="contact-right">
-            <form action="" name="submit-to-google-sheet">
+            <!-- <form action="" name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="your name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="your email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="your Message"
-              ></textarea>
+              <input type="email" name="Email" placeholder="your email" required />
+              <textarea name="Message"rows="6" placeholder="your Message"></textarea>
               <button type="submit" class="btn btn2">Submit</button>
-            </form>
+            </form> -->
+
+            <form id="contactForm">
+              <!-- Replace with your Access Key -->
+              <input type="hidden" name="access_key" value="8cff6d7e-2a75-4626-85b5-4dac4a5eba40">
+              <input type="text" name="Name" placeholder="your name" required />
+              <input type="email" name="Email" placeholder="your email" required />
+              <textarea name="Message"rows="6" placeholder="your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form> 
             <span id="msg"></span>
+
+
+            
           </div>
         </div>
       </div>
@@ -281,6 +286,7 @@
       <p>Copyright © Chandu. Made with ❤️</p>
     </div>
 
+    <!-- script for active tabs and content -->
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
@@ -296,6 +302,8 @@
         document.getElementById(tabname).classList.add("active-tab");
       }
     </script>
+
+    <!-- script for side menu for small screens -->
     <script>
       var sidemenu = document.getElementById("sidemenu");
       function openmenu() {
@@ -305,6 +313,8 @@
         sidemenu.style.right = "-200px";
       }
     </script>
+
+    <!-- script for google forms -->
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbxwiszaWeliBBJdxde7NPtMs0mKizOtSDJHo_56jpXkrlH2eYAfwvXkYeSeuvhAqdcE/exec";
@@ -322,6 +332,35 @@
             form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <!-- sctipt for email -->
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();  // Prevents the page from redirecting
+
+        var form = new FormData(this);
+
+        // Use Fetch API to send the form data without a page reload
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: form
+        })
+        .then(response => response.json())
+        .then(data => {
+          // Handle the success or failure response from the API
+          if (data.success) {
+            document.getElementById("msg").innerHTML = "Your message has been sent successfully!";
+            document.getElementById("contactForm").reset(); // Optional: Reset the form fields
+          } else {
+            document.getElementById("msg").innerHTML = "Oops! Something went wrong.";
+          }
+        })
+        .catch(error => {
+          document.getElementById("msg").innerHTML = "Error submitting form.";
+          console.error("Error:", error);
+        });
       });
     </script>
   </body>
