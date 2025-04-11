@@ -1,0 +1,308 @@
+.nav-container{
+    background-color: #b59d7b;
+    max-height: 70px;
+}
+
+.brand-image {
+    height: 80px;
+    width: 80px;
+    transition: transform 0.3s ease, margin 0.3s ease;
+}
+
+.brand-container:hover .brand-image {
+    transform: scale(0.7);
+    margin: -20px 0 0 60px;
+}
+
+.brand-text {
+    display: none; /* Initially hide the text */
+    position: absolute;
+    top: 80%; /* Center vertically */
+    left: 5%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    color: #503a3a ;
+    font-size: 1.2rem; /* Adjust font size as needed */
+    transition: opacity 0.5s ease-in-out; 
+    opacity: 0;
+    display: flex;
+    flex-direction: column; /* Stack words vertically */
+    align-items: center; 
+}
+
+.brand-container:hover .brand-text {
+    padding-left: 20px;
+    display: block; /* Show text on hover */
+    opacity: 1;
+}
+
+.sections .nav-link{
+    font-size: 20px;
+    font-weight: bold;
+    color: #503a3a !important;
+    position: relative;
+    cursor: pointer;
+}
+
+.sections .nav-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #1d5233;
+    position: absolute;
+    left: 10px;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.sections .nav-link:hover::after{
+    width:50%;
+}
+
+.sections{
+    flex-direction: row !important;
+    gap: 10px;
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .nav-container{
+        width: 100%;
+        padding: 0 !important;
+        display: flex;
+    }
+
+    .nav-container .container-fluid{
+        padding: 0;
+    }
+
+    .nav-link{
+        font-size: 8px !important;
+    }
+
+    .brand-image{
+        width: 30px;
+        height: 30px;
+    }
+
+    .brand-container:hover .brand-image {
+        margin: -20px 0 0 0px;
+    }
+
+    .brand-text {
+        font-size: 0.5rem; /* Adjust font size as needed */
+        left: 7%;
+    }
+
+    /* Hide default collapse behavior */
+.custom-toggler{
+    font-size: 10px !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.custom-toggler:focus{
+    box-shadow: none !important;
+}
+
+.custom-collapse {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    padding: 10px 0 10px 20px;
+    border-radius: 0.5rem;
+    z-index: 1000;
+  }
+  
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+  }
+  
+  .navbar-expand-lg .navbar-collapse.show {
+    display: block !important;
+  }
+    
+}
+
+@media screen and (min-width : 321px) and (max-width:376px) {
+    .nav-container{
+        width: 100%;
+        padding: 0 !important;
+        display: flex;
+    }
+
+    .nav-container .container-fluid{
+        padding: 0;
+    }
+
+    .nav-link{
+        font-size: 8px !important;
+    }
+
+    .brand-image{
+        width: 30px;
+        height: 30px;
+    }
+
+    .brand-container:hover .brand-image {
+        margin: -20px 0 0 0px;
+    }
+
+    .brand-text {
+        font-size: 0.5rem; /* Adjust font size as needed */
+        left: 7%;
+    }
+
+    /* Hide default collapse behavior */
+    .custom-toggler{
+        font-size: 10px !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    .custom-toggler:focus{
+        box-shadow: none !important;
+    }
+
+    .custom-collapse {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        padding: 10px 0 10px 75px;
+        border-radius: 0.5rem;
+        z-index: 1000;
+    }
+    
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+    }
+    
+    .navbar-expand-lg .navbar-collapse.show {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width : 376px) and (max-width:426px) {
+    .nav-container{
+        width: 100%;
+        padding: 0 !important;
+        display: flex;
+    }
+
+    .nav-container .container-fluid{
+        padding: 0;
+    }
+
+    .nav-link{
+        font-size: 8px !important;
+    }
+
+    .brand-container{
+        padding: 0 !important;
+    }
+
+    .brand-image{
+        width: 50px;
+        height: 50px;
+    }
+
+    .brand-container:hover .brand-image {
+        margin: -20px 0 0 0px;
+    }
+
+    .brand-text {
+        font-size: 0.5rem; /* Adjust font size as needed */
+        left: 7%;
+    }
+
+    /* Hide default collapse behavior */
+    .custom-toggler{
+        font-size: 10px !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    .custom-toggler:focus{
+        box-shadow: none !important;
+    }
+
+    .custom-collapse {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        padding: 10px 0 10px 120px;
+        border-radius: 0.5rem;
+        z-index: 1000;
+    }
+    
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+    }
+    
+    .navbar-expand-lg .navbar-collapse.show {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width : 427px) and (max-width:768px) {
+    .nav-container{
+        width: 100%;
+        padding: 0 !important;
+        display: flex;
+    }
+
+    .nav-container .container-fluid{
+        padding: 0;
+    }
+
+    .nav-link{
+        font-size: 15px !important;
+    }
+
+    .brand-container{
+        padding: 0 !important;
+    }
+
+    .brand-image{
+        width: 60px;
+        height: 60px;
+    }
+
+    .brand-container:hover {
+        margin: 10px;
+    }
+
+    .brand-text {
+        font-size: 1rem; /* Adjust font size as needed */
+        left: 7%;
+    }
+
+    /* Hide default collapse behavior */
+    .custom-toggler{
+        font-size: 20px !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    .custom-toggler:focus{
+        box-shadow: none !important;
+    }
+
+    .custom-collapse {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        padding: 10px 0 10px 250px;
+        border-radius: 0.5rem;
+        z-index: 1000;
+    }
+    
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+    }
+    
+    .navbar-expand-lg .navbar-collapse.show {
+        display: block !important;
+    }
+}

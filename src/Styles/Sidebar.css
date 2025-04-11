@@ -1,0 +1,159 @@
+.Sidebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 20px;
+    pointer-events: none; /* Prevent pointer events on the sidebar */
+  }
+  
+  .sidebar-left,
+  .sidebar-right {
+    pointer-events: auto; /* Enable pointer events on the left and right sections */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-list-item {
+    margin: 8px 0;
+  }
+  
+  .sidebar-list-link i {
+    font-size: 20px;
+    color: #000;
+    transition: font-size 0.3s ease;
+  }
+
+  .sidebar-list-link i:hover{
+    font-size: 30px;
+  }
+  
+  .vertical-email {
+    writing-mode: vertical-rl;
+    /* transform: rotate(180deg); makes the text upright in vertical mode */
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    transition: font-size 0.3s ease;
+    
+  }
+
+  .sidebar-right .vertical-email:hover{
+    font-size: larger;
+  }
+  
+  .line {
+    width: 2px;
+    height: 100px;
+    background-color: #000;
+    /* margin: 10px 0; */
+  }
+  
+  @media screen and (max-width: 320px) {
+    .Sidebar {
+      max-width: 320px;
+      padding: 1px;
+    }
+
+    .sidebar-list-link i {
+      font-size: 15px;
+    }
+
+    .sidebar-list-link i:hover{
+      font-size: 20px;
+    }
+    
+    .vertical-email{
+      font-size: 0.8rem;
+    }
+
+    .sidebar-right .vertical-email:hover{
+      font-size: small;
+    }
+  }
+ 
+  @media screen and (min-width:320px) and (max-width:376px) {
+    .Sidebar {
+      width: 100%;
+      padding: 1px;
+    }
+
+    .sidebar-list-link i {
+      font-size: 15px;
+    }
+
+    .sidebar-list-link i:hover{
+      font-size: 20px;
+    }
+    
+    .vertical-email{
+      font-size: 0.8rem;
+    }
+
+    .sidebar-right .vertical-email:hover{
+      font-size: small;
+    }
+  }
+
+  @media screen and (min-width : 376px) and (max-width:426px) {
+    .Sidebar {
+      width: 100%;
+      padding: 1px;
+    }
+
+    .sidebar-list-link i {
+      font-size: 15px;
+    }
+
+    .sidebar-list-link i:hover{
+      font-size: 20px;
+    }
+    
+    .vertical-email{
+      font-size: 0.8rem;
+    }
+
+    .sidebar-right .vertical-email:hover{
+      font-size: small;
+    }
+  }
+
+  @media screen and (min-width : 427px) and (max-width:768px){
+    .Sidebar {
+      width: 100%;
+      padding: 1px;
+    }
+
+    .sidebar-list-link i {
+      font-size: 15px;
+    }
+
+    .sidebar-list-link i:hover{
+      font-size: 20px;
+    }
+    
+    .vertical-email{
+      font-size: 0.8rem;
+    }
+
+    .sidebar-right .vertical-email:hover{
+      font-size: small;
+    }
+  }
+  
+  @media screen and (min-width : 769px) and (max-width:1024px){
+    .Sidebar {
+      width: 100%;
+      padding: 1px;
+    }
+  }

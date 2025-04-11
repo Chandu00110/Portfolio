@@ -1,0 +1,161 @@
+.Services {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1200px;
+    border-radius: 12px;
+}
+
+.Services-List {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 10px 50px;
+}
+
+/* Base style for each service */
+.service {
+    display: flex; /* Required for flex-direction to work */
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 30px; */
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* Ensure both h2 and p align left by default */
+.service h2,
+.service p {
+    text-align: center;
+}
+
+/* Text container */
+.service-content {
+    max-width: 600px;
+    background-color: rgb(146, 142, 96);
+    padding: 20px;
+}
+
+.service-content {
+    position: relative;
+    max-width: 600px;
+    background-color: rgb(146, 142, 96);
+    padding: 20px 40px;
+    color: white;
+    clip-path: polygon(0% 0%, calc(100% - 50px) 0%, 100% 50%, calc(100% - 50px) 100%, 0% 100%);
+}
+
+.service:nth-child(even) .service-content {
+    clip-path: polygon(50px 0%, 100% 0%, 100% 100%, 50px 100%, 0% 50%);
+    text-align: end;
+}
+
+
+/* Alternate layout for even-indexed items */
+.service:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.service:nth-child(even) .service-content {
+    text-align: end;
+}
+
+/* Apply continuous animation */
+.service:nth-child(odd) {
+    animation: moveLeftToRight 2s ease-in-out infinite;
+}
+
+.service:nth-child(even) {
+    animation: moveRightToLeft 2s ease-in-out infinite;
+}
+
+/* Initial hidden state */
+.service {
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-out;
+}
+
+/* From left animation */
+.from-left {
+    transform: translateX(-50px);
+}
+
+/* From right animation */
+.from-right {
+    transform: translateX(50px);
+}
+
+/* When visible, animate in */
+.service.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media screen and (max-width:320px) {
+    .Services{
+        width: 320px;
+        margin: 0;
+    }
+
+    .service-content{
+        padding: 10px 30px 10px 10px;
+        clip-path: polygon(0% 0%, calc(100%) 0%, 100% 50%, calc(100%) 100%, 0% 100%);
+    }
+    
+    .service:nth-child(even) .service-content {
+        clip-path: polygon(0px 0%, 100% 0%, 100% 100%, 0px 100%, 0% 50%);
+    }
+    .service-content h2{
+        font-size: 25px ;
+    }
+
+    .service-content p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:376px)  {
+    .Services{
+        width: 100%;
+        margin: 0;
+    }
+
+    .service-content{
+        padding: 10px 30px 10px 10px;
+        clip-path: polygon(0% 0%, calc(100%) 0%, 100% 50%, calc(100%) 100%, 0% 100%);
+    }
+    
+    .service:nth-child(even) .service-content {
+        clip-path: polygon(0px 0%, 100% 0%, 100% 100%, 0px 100%, 0% 50%);
+    }
+    .service-content h2{
+        font-size: 25px ;
+    }
+
+    .service-content p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width : 376px) and (max-width:426px) {
+    .Services{
+        width: 100%;
+        margin: 0;
+    }
+
+    .service-content{
+        padding: 10px 30px 10px 10px;
+        clip-path: polygon(0% 0%, calc(100%) 0%, 100% 50%, calc(100%) 100%, 0% 100%);
+    }
+    
+    .service:nth-child(even) .service-content {
+        clip-path: polygon(0px 0%, 100% 0%, 100% 100%, 0px 100%, 0% 50%);
+    }
+    .service-content h2{
+        font-size: 25px ;
+    }
+
+    .service-content p{
+        font-size: 12px;
+    }
+}

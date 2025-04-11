@@ -1,0 +1,226 @@
+.Experience{
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1200px;
+    border-radius: 12px;
+}
+
+.Companies{
+    margin-left: 50px;
+}
+
+.company-list {
+    border-left: 3px solid #0d6efd; /* Vertical line */
+}
+
+.company-list p {
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 10px;
+  transition: background 0.3s ease;
+}
+
+.company-list p.active {
+    font-weight: 1000;
+  color: white;
+  border-radius: 5px;
+  border-left: 3px solid #0d6efd; /* Vertical line */
+}
+
+.company-details ul{
+    list-style-type: none;
+}
+
+.internship-details{
+    list-style-type: disc !important;
+}
+
+@media screen and (max-width:320px) {
+    .Experience{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .Companies{
+        margin-left: 20px;
+        flex-direction: column;
+    }
+
+    .company-list {
+        
+        border-left: none; 
+        display: flex;
+        width: 320px !important;
+    }
+
+    .company-list p {
+      width: 30%;
+      font-size: xx-small;
+        font-weight: 500;
+      cursor: pointer;
+      padding: 5px;
+      margin-bottom: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .company-list p.active {
+      color: white;
+      font-weight: 500;
+      border-radius: 5px;
+      border: none;
+      border-bottom: 3px solid #0d6efd; 
+    }
+
+    .company-details h4{
+        font-size: 15px;
+    }
+
+    .company-details p{
+        font-size: 10px;
+    }
+
+    .company-details .internship-details {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:376px) {
+    .Experience{
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .Companies{
+        margin-left: 20px;
+        flex-direction: column;
+    }
+
+    .company-list {
+        
+        border-left: none; 
+        display: flex;
+        width: 320px !important;
+    }
+
+    .company-list p {
+      width: 30%;
+      font-size: xx-small;
+        font-weight: 500;
+      cursor: pointer;
+      padding: 5px;
+      margin-bottom: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .company-list p.active {
+      color: white;
+      font-weight: 500;
+      border-radius: 5px;
+      border: none;
+      border-bottom: 3px solid #0d6efd; 
+    }
+
+    .company-details h4{
+        font-size: 15px;
+    }
+
+    .company-details p{
+        font-size: 10px;
+    }
+
+    .company-details .internship-details {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width : 376px) and (max-width:426px)  {
+    .Experience{
+        width: 100%;
+        margin: 0;
+    }
+
+    .Companies{
+        margin-left: 20px;
+        flex-direction: column;
+    }
+
+    .company-list {
+        
+        border-left: none; 
+        display: flex;
+        width: 320px !important;
+    }
+
+    .company-list p {
+      width: 30%;
+      font-size: xx-small;
+        font-weight: 500;
+      cursor: pointer;
+      padding: 5px;
+      margin-bottom: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .company-list p.active {
+      color: white;
+      font-weight: 500;
+      border-radius: 5px;
+      border: none;
+      border-bottom: 3px solid #0d6efd; 
+    }
+
+    .company-details h4{
+        font-size: 15px;
+    }
+
+    .company-details p{
+        font-size: 10px;
+    }
+
+    .company-details .internship-details {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width : 427px) and (max-width:768px)  {
+    .Experience{
+        width: 100%;
+        margin: 0;
+    }
+
+    .Companies{
+        margin: 20px !important;
+    }
+
+    .company-list p {
+      width: 550%;
+      font-size: 0.8rem;
+        font-weight: 500;
+      cursor: pointer;
+      padding: 5px;
+      margin-bottom: 10px;
+      transition: background 0.3s ease;
+    }
+}
+
+@media screen and (min-width : 769px) and (max-width:1024px)  {
+    .Experience{
+        width: 100%;
+        margin: 0;
+    }
+
+    .Companies{
+        margin: 20px !important;
+    }
+
+    .company-list p {
+      width: 550%;
+      font-size: 0.8rem;
+        font-weight: 500;
+      cursor: pointer;
+      padding: 5px;
+      margin-bottom: 10px;
+      transition: background 0.3s ease;
+    }
+}
+

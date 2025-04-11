@@ -1,0 +1,89 @@
+.Contact{
+    text-align: center;
+    background-color: #bea661;
+    /* background-image: url("../images/profile-logos/Contact_bg.png"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+    padding: 150px 0 50px 0;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    min-height: 500px;
+}
+
+.Contact h5,h2{
+    margin-bottom: 10px;
+}
+
+.Contact p{
+    margin: 0;
+}
+
+.Contact h2{
+    font-size: 50px;
+}
+
+.Contact a[role="button"]{
+    margin-top: 20px;
+    font-size: large;
+    font-weight: 100;
+}
+
+.Contact a{
+    text-decoration: none;
+    color: #fff ;
+    font-size: xx-large;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 320px) {
+    .Contact{
+        width: 100%;
+        margin: 0 ;
+        padding: 100px 20px 0 20px;
+    }
+
+    .Contact h2{
+        font-size: 30px;
+    }
+
+    .Contact p{
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (min-width:320px) and (max-width:376px)  {
+    .Contact{
+        width: 100%;
+        margin: 0 ;
+        padding: 100px 20px 0 20px;
+    }
+
+    .Contact h2{
+        font-size: 30px;
+    }
+
+    .Contact p{
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (min-width : 376px) and (max-width:426px)  {
+    .Contact{
+        width: 100%;
+        margin: 0 ;
+        padding: 150px 20px 0 20px;
+    }
+
+    .Contact h2{
+        font-size: 30px;
+    }
+
+    .Contact p{
+        font-size: 13px;
+        padding: 5px;
+    }
+    
+}

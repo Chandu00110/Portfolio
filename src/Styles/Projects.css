@@ -1,0 +1,172 @@
+.Projects {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1200px;
+    border-radius: 12px;
+}
+
+.Project-List{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.Project-Card .card {
+    width: 18rem;
+    height: 18rem;
+    background-color: #bea661;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.Project-Card .card .name {
+    background-color: #fff5e7;
+    color: #000;
+    font-size: 30px;
+    margin: 100px 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 #000;
+}
+
+/* Optional overlay for fade effect */
+.Project-Card .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* translucent white */
+    z-index: 0;
+}
+
+.Project-Card .card .card-body {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #bea661);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 10px;
+    transition: height 0.5s ease, opacity 0.5s ease;
+    z-index: 1; /* On top of overlay */
+}
+
+.Project-Card:hover .card .card-body {
+    height: 100%;
+    opacity: 1;
+}
+
+.Project-Card:hover .card .name{
+    display: none;
+}
+@media screen and (max-width : 320px) {
+    .Projects{
+        width: 100%;
+        margin: 0;
+    }
+
+    .Project-Card .card{
+        width: 250px;
+        height: 205px;
+    }
+
+    .Project-Card .card .card-body{
+        font-size: 8px;
+        padding: 0 20px;
+       
+    }
+
+    .Project-Card .card .name {
+        font-size: 20px;
+        margin: 80px 50px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 #000;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:376px) {
+    .Projects{
+        width: 100%;
+        margin: 0;
+    }
+
+    .Project-Card .card{
+        width: 250px;
+        height: 205px;
+    }
+
+    .Project-Card .card .card-body{
+        font-size: 8px;
+        padding: 0 20px;
+    }
+
+    .Project-Card .card .name {
+        font-size: 20px;
+        margin: 80px 50px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 #000;
+    }
+}
+
+@media screen and (min-width : 376px) and (max-width:426px){
+    .Projects{
+        width: 100%;
+        margin: 0;
+    }
+
+    .Project-Card .card{
+        width: 250px;
+        height: 205px;
+    }
+
+    .Project-Card .card .card-body{
+        font-size: 8px;
+        padding: 0 20px;
+    }
+
+    .Project-Card .card .name {
+        font-size: 20px;
+        margin: 80px 50px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 #000;
+    }
+}
+
+@media screen and (min-width : 427px) and (max-width:768px){
+    .Projects{
+        width: 100%;
+        margin: 0;
+    }
+
+    .Project-Card .card{
+        width: 250px;
+        height: 205px;
+    }
+
+    .Project-Card .card .card-body{
+        font-size: 8px;
+        padding: 0 20px;
+    }
+
+    .Project-Card .card .name {
+        font-size: 20px;
+        margin: 80px 50px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 #000;
+    }
+}
