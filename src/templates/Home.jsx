@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "../Styles/Home.css";
 import Pic from "../images/profile-logos/Pic.png";
 const Home = () => {
@@ -32,6 +33,7 @@ const Home = () => {
               work.
             </p>
             <p>Let’s connect and create something amazing together!</p>
+            <a href="/CHANDRA-SHEKHAR-PEPAKAYALA.pdf" target="_blank" className="btn btn-warning">Open Resume</a>
           </div>
         </div>
       </div>

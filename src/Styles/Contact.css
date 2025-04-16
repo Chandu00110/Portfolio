@@ -85,5 +85,11 @@
         font-size: 13px;
         padding: 5px;
     }
-    
+}
+
+@media (min-width : 427px) and (max-width: 720px) {
+    .Contact{
+        margin: 0 ;
+        padding: 150px 20px 0 20px;
+    }
 }

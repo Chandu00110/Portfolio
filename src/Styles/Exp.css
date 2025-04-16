@@ -6,11 +6,11 @@
 }
 
 .Companies{
-    margin-left: 50px;
+    margin-left: 50px !important;
 }
 
 .company-list {
-    border-left: 3px solid #0d6efd; /* Vertical line */
+    border-left: 3px solid #123e80; /* Vertical line */
 }
 
 .company-list p {
@@ -18,16 +18,18 @@
   padding: 5px;
   margin-bottom: 10px;
   transition: background 0.3s ease;
+  font-size: 12px;
+
 }
 
 .company-list p.active {
+    font-size: 15px;
     font-weight: 1000;
-  color: white;
-  border-radius: 5px;
-  border-left: 3px solid #0d6efd; /* Vertical line */
+    color: rgb(112, 101, 38);
+    border-left: 3px solid #c02626; /* Vertical line */
 }
 
-.company-details ul{
+.company-details ul li{
     list-style-type: none;
 }
 
@@ -35,19 +37,17 @@
     list-style-type: disc !important;
 }
 
-@media screen and (max-width:320px) {
+@media (max-width:600px) {
     .Experience{
-        max-width: 100%;
         margin: 0;
     }
 
     .Companies{
-        margin-left: 20px;
+        margin-left: 10px !important;
         flex-direction: column;
     }
 
     .company-list {
-        
         border-left: none; 
         display: flex;
         width: 320px !important;
@@ -55,8 +55,9 @@
 
     .company-list p {
       width: 30%;
+
       font-size: xx-small;
-        font-weight: 500;
+      font-weight: 500;
       cursor: pointer;
       padding: 5px;
       margin-bottom: 10px;
@@ -64,11 +65,10 @@
     }
 
     .company-list p.active {
-      color: white;
+      font-size: xx-small ;
       font-weight: 500;
-      border-radius: 5px;
       border: none;
-      border-bottom: 3px solid #0d6efd; 
+      border-bottom: 3px solid #c02626; 
     }
 
     .company-details h4{
@@ -80,32 +80,38 @@
     }
 
     .company-details .internship-details {
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .company-details ul{
+        padding: 0;
+    }
+
+    .internship-details{
+        list-style-type: disc !important;
     }
 }
 
-@media screen and (min-width:321px) and (max-width:376px) {
+@media (min-width : 601px) and (max-width : 992px) {
     .Experience{
-        max-width: 100%;
         margin: 0;
     }
 
     .Companies{
-        margin-left: 20px;
+        margin-left: 10px !important;
         flex-direction: column;
     }
 
     .company-list {
-        
         border-left: none; 
         display: flex;
-        width: 320px !important;
+        width: 440px !important;
     }
 
     .company-list p {
       width: 30%;
       font-size: xx-small;
-        font-weight: 500;
+      font-weight: 500;
       cursor: pointer;
       padding: 5px;
       margin-bottom: 10px;
@@ -113,114 +119,32 @@
     }
 
     .company-list p.active {
-      color: white;
+      font-size: small ;
       font-weight: 500;
-      border-radius: 5px;
       border: none;
-      border-bottom: 3px solid #0d6efd; 
+      border-bottom: 3px solid #c02626; 
     }
 
     .company-details h4{
-        font-size: 15px;
+        font-size: 20px !important;
     }
 
     .company-details p{
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .company-details .internship-details {
-        font-size: 10px;
-    }
-}
-
-@media screen and (min-width : 376px) and (max-width:426px)  {
-    .Experience{
-        width: 100%;
-        margin: 0;
-    }
-
-    .Companies{
         margin-left: 20px;
-        flex-direction: column;
+        font-size: 14px;
     }
 
-    .company-list {
-        
-        border-left: none; 
-        display: flex;
-        width: 320px !important;
-    }
-
-    .company-list p {
-      width: 30%;
-      font-size: xx-small;
-        font-weight: 500;
-      cursor: pointer;
-      padding: 5px;
-      margin-bottom: 10px;
-      transition: background 0.3s ease;
-    }
-
-    .company-list p.active {
-      color: white;
-      font-weight: 500;
-      border-radius: 5px;
-      border: none;
-      border-bottom: 3px solid #0d6efd; 
-    }
-
-    .company-details h4{
-        font-size: 15px;
-    }
-
-    .company-details p{
-        font-size: 10px;
-    }
-
-    .company-details .internship-details {
-        font-size: 10px;
+    .company-details ul{
+        padding: 0;
     }
 }
 
-@media screen and (min-width : 427px) and (max-width:768px)  {
+@media (max-width: 1200px){
     .Experience{
-        width: 100%;
         margin: 0;
     }
-
-    .Companies{
-        margin: 20px !important;
-    }
-
-    .company-list p {
-      width: 550%;
-      font-size: 0.8rem;
-        font-weight: 500;
-      cursor: pointer;
-      padding: 5px;
-      margin-bottom: 10px;
-      transition: background 0.3s ease;
-    }
 }
-
-@media screen and (min-width : 769px) and (max-width:1024px)  {
-    .Experience{
-        width: 100%;
-        margin: 0;
-    }
-
-    .Companies{
-        margin: 20px !important;
-    }
-
-    .company-list p {
-      width: 550%;
-      font-size: 0.8rem;
-        font-weight: 500;
-      cursor: pointer;
-      padding: 5px;
-      margin-bottom: 10px;
-      transition: background 0.3s ease;
-    }
-}
-

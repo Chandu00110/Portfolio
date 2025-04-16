@@ -20,6 +20,7 @@ code {
 }
 
 .heading h3{
+  margin: 0;
   margin-left: 10px;
 }
 
@@ -39,20 +40,58 @@ code {
   }
 }
 
-/* @media screen and (max-width: 320px) {
-  body{
-    width: 320px;
+@media (max-width: 600px){
+  .heading{
+    margin-left: 10px;
+  }
+  .heading img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .heading h3{
+    font-size: 1.2rem;
+    margin-left: 5px;
   }
 }
 
-@media screen and (min-width: 321px) and (max-width:375px){
-  body{
-    width: 375pxpx;
-  }
-} */
-
-@media screen and (min-width : 769px) and (max-width:1024px){
+@media (min-width : 601px) and (max-width: 868px){
   .heading{
-    margin-left: 30px;
+    margin-left: 10px;
+  }
+
+  .heading img{
+    width: 25px;
+    height: 25px;
+  }
+  .heading h3{
+    font-size: 1.3rem;
+    margin-left: 5px;
+  }
+}
+
+@media (min-width : 867px) and (max-width: 992px){
+  .heading{
+    margin-left: 10px;
+  }
+  .heading img{
+    width: 27px;
+    height: 27px;
+  }
+  .heading h3{
+    font-size: 1.5rem;
+    margin-left: 5px;
+  }
+}
+
+@media (min-width : 993px) and (max-width : 1200px){
+
+  .heading{
+    margin-left: 15px;
+  }
+
+  .heading h3{
+    font-size: 1.7rem;
+    margin-left: 5px;
   }
 }
