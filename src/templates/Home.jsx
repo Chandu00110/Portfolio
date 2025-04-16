@@ -12,7 +12,7 @@ const Home = () => {
           </div>
           <div className="col-6 col-left">
             <h2>
-              G'day, I'm <br /> Chandra Shekhar,
+              Hi there, I'm <br /> Chandra Shekhar,
             </h2>
             <h4>Full Stack Developer</h4>
             <p>
