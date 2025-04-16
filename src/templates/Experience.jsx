@@ -32,7 +32,7 @@ const Experience = ({ wheel }) => {
             <ul>
               <li>
                 <h4>Python Developer Intern</h4>
-                <p>Feb 2025 - Present</p>
+                <p>Feb 2025 - April 2025</p>
                 <ul className="internship-details">
                   <li>
                     Contributing to the development of web-based solutions using
