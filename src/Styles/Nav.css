@@ -142,6 +142,15 @@
         font-size: 15px;
       }
 
+      .sections .nav-link::after {
+        left: 0px;
+        bottom: -3px;
+      }
+    
+      .sections .nav-link:hover::after {
+        width: 70%;
+      }
+
       .custom-toggler {
         padding: 0 5px !important;
         font-size: 13px !important;
