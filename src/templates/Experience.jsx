@@ -81,7 +81,7 @@ const Experience = ({ wheel }) => {
                   <li>Work with PostgreSQL Server and Entity Framework to manage data storage and retrieval. </li>
                   <li>Develop and optimize RESTful APIs using ASP.NET Core to support front-end applications.</li>
                   <li>Optimize database queries for better performance and scalability. 
-                  Troubleshoot and resolve issues related to application performance a</li>
+                  Troubleshoot and resolve issues related to application performance and user experience</li>
                 </ul>
               </li>
             </ul>
