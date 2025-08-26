@@ -12,7 +12,7 @@ const Contact = () => {
         <p> However, my inbox is always open. Whether you have a question or just want to say hi, </p>
         <p>I’ll try my best to get back to you!.
         Say Hello</p>
-        <Button as="a" href="mailto:chandhupepakayala@gmail.com" variant='outline-warning'>
+        <Button as="a" href="mailto:chandrashekharpepakayala@gmail.com" variant='outline-warning'>
                 say HI!
         </Button><br/>
         {/* <a href="mailto:chandhupepakayala@gmail.com">

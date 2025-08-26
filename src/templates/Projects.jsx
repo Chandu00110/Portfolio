@@ -11,11 +11,17 @@ import currency from '../images/Projects/currency-convertor.jpg'
 
 const Projects = ({wheel}) => {
   const projects = [
+    // {
+    //   name: "Ecommerce",
+    //   description: "TempEcommerce is a full-stack e-commerce web application developed using Java. The project is designed to simulate the core functionalities of an online shopping platform, enabling both end-users and administrators to interact with the system through user-friendly interfaces and backend logic. It demonstrates the implementation of real-world e-commerce features while showcasing Java-based web development skills.",
+    //   image: ecommerce,
+    //   link: "https://github.com/Chandu00110/TempEcommerce"
+    // },
     {
-      name: "Ecommerce",
-      description: "TempEcommerce is a full-stack e-commerce web application developed using Java. The project is designed to simulate the core functionalities of an online shopping platform, enabling both end-users and administrators to interact with the system through user-friendly interfaces and backend logic. It demonstrates the implementation of real-world e-commerce features while showcasing Java-based web development skills.",
+      name: "Django-React-Store",
+      description: "Django React Store – A full-stack e-commerce web app built with Django and React featuring JWT authentication, Razorpay payment integration, and a responsive UI. Includes admin dashboard, shopping cart, and order management with RESTful APIs.",
       image: ecommerce,
-      link: "https://github.com/Chandu00110/TempEcommerce"
+      link: "https://github.com/Chandu00110/django-react-store"
     },
     {
       name: "N-Queens",
@@ -60,7 +66,7 @@ const Projects = ({wheel}) => {
                             <Card.Text>
                                 {project.description}
                             </Card.Text>
-                            <Button as="a" href={project.link} variant='warning'>
+                            <Button as="a" href={project.link} target='_blank' variant='warning'>
                               <i className="bi bi-arrow-up-right-circle-fill"></i>
                             </Button>
                         </Card.Body>

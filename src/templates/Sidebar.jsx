@@ -40,8 +40,8 @@ const Sidebar = () => {
             <div className='line'></div>
         </div>
         <div className="sidebar-right">
-            <a href="mailto:chandhupepakayala@gmail.com"  className="vertical-email">
-                chandhupepakayala@gmail.com
+            <a href="mailto:chandrashekharpepakayala@gmail.com"  className="vertical-email">
+                chandrashekharpepakayala@gmail.com
             </a>
             <div className='line'></div>
         </div>

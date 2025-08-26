@@ -33,7 +33,7 @@ const Home = () => {
               work.
             </p>
             <p>Let’s connect and create something amazing together!</p>
-            <a href="/CHANDRA-SHEKHAR-PEPAKAYALA.pdf" target="_blank" className="btn btn-warning">Open Resume</a>
+            <a href="/CHANDRA_SHEKHAR.pdf" target="_blank" className="btn btn-warning">Open Resume</a>
           </div>
         </div>
       </div>
